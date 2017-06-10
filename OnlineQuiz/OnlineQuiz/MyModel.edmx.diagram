@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="526f6b9531904d6995c3df96d27f4b87" Name="Diagram1">
+        <EntityTypeShape EntityType="OnlineQuizModel.tbl_Users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineQuizModel.tbl_Quiz" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="OnlineQuizModel.tbl_Questions" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OnlineQuizModel.tbl_QuizQuestionRelation" Width="1.5" PointX="3.375" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

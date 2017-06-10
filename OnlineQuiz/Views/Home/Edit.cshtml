@@ -1,0 +1,182 @@
+﻿@model OnlineQuiz.tbl_Questions
+@{
+    ViewBag.Title = "Edit Quiz";
+}
+<link href="~/Styles/styles.css" rel="stylesheet" />
+<h2>Update Quiz</h2>
+@if (Session["LoggedUserName"] != null)
+{
+    <text>welcome @Session["LoggedUserName"].ToString()</text>
+}
+    @*@Html.ActionLink("View Quiz", "viewquiz")
+        @Html.ActionLink("Create Quiz", "createquiz")*@
+    <hr />
+    @using (Html.BeginForm())
+    {
+        int quizid = @ViewBag.QuizData[0].QuizId;
+        @Html.AntiForgeryToken();
+        @Html.ValidationSummary(true);
+        <div class="col-sm-12 col-xs-12 col-md-12">
+            <div class="col-sm-3 col-xs-3 col-md-3 allquiz">
+                <div class="divheadings text-center">Available Quizzes</div>
+                @{ var QuizName = "";}
+                <ul class="vertical ex">
+                    @foreach (var item in ViewBag.AllQuiz)
+                    {
+                    if (item.QuizId == quizid)
+                    {
+                        QuizName = item.QuizName;
+                            <li>
+                                @Html.ActionLink(QuizName, "Edit", new { quizid = item.QuizId }, new { @class = "active atagoverflow" })
+                            </li>
+                        }
+                        else
+                        {
+                            QuizName = item.QuizName;
+                            <li>
+                                @Html.ActionLink(QuizName, "Edit", new { quizid = item.QuizId }, new { @class = "atagoverflow" })
+                            </li>
+                        }
+                    }
+                </ul>
+
+                <div class="text-center divspace">
+                    @Html.ActionLink("Back To Quiz Info", "AfterLogin", "Home", new { }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+            <div class="col-sm-9 col-xs-9 col-md-9 verticalborder">
+                <div class="divheadings text-center">Available Questions</div>
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th class="thstyle_underline1">Select</th>
+                            <th class="thstyle_underline2">Question</th>
+                        </tr>
+                    </thead>
+                    @{int i = 1;}
+                    @foreach (var item in ViewBag.AllQuestions)
+                    {
+                    var allqs = ViewBag.AllQuestions;
+                    var qs = ViewBag.Questions;
+                    //var isq = qs.Where(a => a.QuestionId == item.QuestionId).ToList().Count();
+
+                    if (item.IsMultipleChoice)
+                    {
+
+                            <tr>
+                                <td class="tdstyle1">
+                                    @if (item.IsQuizQuestion == true)
+                                    {
+                                        <input type="checkbox" questionid="@item.QuestionId" name="EditQuestions" checked id="chk_isrequired_@item.QuestionId" />
+                                    }
+                                    else
+                                    {
+                                        <input type="checkbox" questionid="@item.QuestionId" name="EditQuestions" id="chk_isrequired_@item.QuestionId" />
+                                    }
+                                </td>
+                                <td class="tdstyle2">
+                                    <div>
+                                        @item.Question
+                                    </div>
+
+                                    @if (item.Option1 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option1
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option1
+                                        </div>
+                                    }
+                                    @if (item.Option2 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option2
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option2
+                                        </div>
+                                    }
+                                    @if (item.Option3 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option3
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option3
+                                        </div>
+                                    }
+                                    @if (item.Option4 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option4
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option4
+                                        </div>
+                                    }
+                                </td>
+
+                            </tr>
+                        }
+                        else
+                        {
+
+                            <tr>
+                                <td class="tdstyle1">
+                                    @if (item.IsQuizQuestion == true)
+                                    {
+                                        <input type="checkbox" questionid="@item.QuestionId" checked name="EditQuestions" id="chk_isrequired_@item.QuestionId" />
+                                    }
+                                    else
+                                    {
+                                        <input type="checkbox" questionid="@item.QuestionId" name="EditQuestions" id="chk_isrequired_@item.QuestionId" />
+                                    }
+                                </td>
+                                <td class="tdstyle2 tdspacing">
+                                    <div>
+                                        @item.Question
+                                    </div>
+                                    <div class="divcorrectanswer">
+                                        @item.CorrectAnswer
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        i++;
+                    }
+                </table>
+
+                <div class="divspace">
+                    <p>@Html.ActionLink("Publish Quiz", "UpdateQuiz", new { quizid = quizid }, new { @class = "btn btn-primary btnpublishquiz" })</p>
+                    <input type="hidden" name="hid_qids" id="hid_qids" value="" />
+                    @Html.HiddenFor(a => quizid);
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+                        }
+    @section Scripts{
+        @Scripts.Render("~/bundles/validate")
+    }

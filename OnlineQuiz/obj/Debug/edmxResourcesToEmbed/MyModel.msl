@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OnlineQuizModelStoreContainer" CdmEntityContainer="OnlineQuizEntities">
+    <EntitySetMapping Name="tbl_Users">
+      <EntityTypeMapping TypeName="OnlineQuizModel.tbl_Users">
+        <MappingFragment StoreEntitySet="tbl_Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Quiz">
+      <EntityTypeMapping TypeName="OnlineQuizModel.tbl_Quiz">
+        <MappingFragment StoreEntitySet="tbl_Quiz">
+          <ScalarProperty Name="QuizInstructions" ColumnName="QuizInstructions" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Questions">
+      <EntityTypeMapping TypeName="OnlineQuizModel.tbl_Questions">
+        <MappingFragment StoreEntitySet="tbl_Questions">
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="IsMultipleChoice" ColumnName="IsMultipleChoice" />
+          <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_QuizQuestionRelation">
+      <EntityTypeMapping TypeName="OnlineQuizModel.tbl_QuizQuestionRelation">
+        <MappingFragment StoreEntitySet="tbl_QuizQuestionRelation">
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

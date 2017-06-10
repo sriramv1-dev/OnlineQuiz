@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineQuizModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_Questions">
+    <Key>
+      <PropertyRef Name="QuestionId" />
+    </Key>
+    <Property Name="QuestionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Question" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CorrectAnswer" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsMultipleChoice" Type="bit" Nullable="false" />
+    <Property Name="Option1" Type="nvarchar(max)" />
+    <Property Name="Option2" Type="nvarchar(max)" />
+    <Property Name="Option3" Type="nvarchar(max)" />
+    <Property Name="Option4" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Quiz">
+    <Key>
+      <PropertyRef Name="QuizId" />
+    </Key>
+    <Property Name="QuizId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuizName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QuizInstructions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_QuizQuestionRelation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuizId" Type="int" Nullable="false" />
+    <Property Name="QuestionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="OnlineQuizModelStoreContainer">
+    <EntitySet Name="tbl_Questions" EntityType="Self.tbl_Questions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Quiz" EntityType="Self.tbl_Quiz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_QuizQuestionRelation" EntityType="Self.tbl_QuizQuestionRelation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Users" EntityType="Self.tbl_Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

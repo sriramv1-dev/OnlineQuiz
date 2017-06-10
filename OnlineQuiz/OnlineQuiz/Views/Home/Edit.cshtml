@@ -1,0 +1,107 @@
+﻿@model OnlineQuiz.tbl_Questions
+@{
+    ViewBag.Title = "Edit Quiz";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm("UpdateQuiz", "Quiz", FormMethod.Post))
+{
+    int quizid = @ViewBag.QuizData[0].QuizId;
+    @Html.AntiForgeryToken();
+    @Html.ValidationSummary(true);
+    <div class="col-sm-12 col-xs-12 col-md-12">
+        <div class="col-sm-2 col-xs-2 col-md-2">
+            <h4>@ViewBag.QuizData[0].QuizName</h4>
+            @Html.ActionLink("Back To Quiz Info", "AfterLogin", "Home")
+        </div>
+        <div class="col-sm-10 col-xs-10 col-md-10">
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th style="width:30%">Sl no.</th>
+                        <th style="width:70%">Question</th>
+                    </tr>
+                </thead>
+                @{int i = 1;}
+                @foreach (var item in ViewBag.AllQuestions)
+                {
+                    var allqs = ViewBag.AllQuestions;
+                    var qs = ViewBag.Questions;
+                    //var isq = qs.Where(a => a.QuestionId == item.QuestionId).ToList().Count();
+
+                    string[] options;
+                    if (item.IsMultipleChoise)
+                    {
+                        options = item.AnswerOptions.Split(',');
+
+                        <tr>
+                            <td style="width:20%">
+                                @if (item.IsQuizQuestion == true)
+                                {
+                                    <input type="checkbox" questionid="@item.QuestionId" name="EditQuestions" checked id="chk_isrequired_@item.QuestionId" />
+                                }
+                                else
+                                {
+                                    <input type="checkbox" questionid="@item.QuestionId" name="EditQuestions" id="chk_isrequired_@item.QuestionId" />
+                                }
+                            </td>
+                            <td style="width:80%">
+                                @item.Question
+                                <table>
+                                    <tr>
+                                        <ul>
+                                            @foreach (string option in options)
+                                            {
+                                                if (option == item.CorrectAnswer)
+                                                {
+                                                    @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                                    <li><span>&#10003; @option</span></li>
+                                                }
+                                                else
+                                                {
+                                                    @*<td style="width:30%"><div>@option</div></td>*@
+                                                    <li>@option</li>
+                                                }
+                                            }
+                                        </ul>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                    }
+                    else
+                    {
+
+                        <tr>
+                            <td style="width:20%">
+                                @if (item.IsQuizQuestion == true)
+                                {
+                                    <input type="checkbox" questionid="@item.QuestionId" checked name="EditQuestions" id="chk_isrequired_@item.QuestionId" />
+                                }
+                                else
+                                {
+                                    <input type="checkbox" questionid="@item.QuestionId" name="EditQuestions" id="chk_isrequired_@item.QuestionId" />
+                                }
+                            </td>
+                            <td style="width:80%">
+                                @item.Question
+                            </td>
+                        </tr>
+                    }
+                    i++;
+                }
+            </table>
+
+            <div>
+                <p>@Html.ActionLink("Update Quiz", "UpdateQuiz", new { quizid = quizid })</p>
+                <input type="hidden" name="hid_qids" value="" />
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+                    }
+@section Scripts{
+    @Scripts.Render("~/bundles/validate")
+}

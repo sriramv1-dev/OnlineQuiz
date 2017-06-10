@@ -1,0 +1,138 @@
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\csc.exe
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\System.Collections.Immutable.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\System.Reflection.Metadata.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\vbc.exe
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\VBCSCompiler.exe
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\roslyn\VBCSCompiler.exe.config
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\OnlineQuiz.dll.config
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\OnlineQuiz.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\OnlineQuiz.pdb
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Antlr3.Runtime.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\EntityFramework.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\EntityFramework.SqlServer.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Google.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Web.Infrastructure.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Newtonsoft.Json.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Owin.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Helpers.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Mvc.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Optimization.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Razor.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Deployment.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Razor.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\WebGrease.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Helpers.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Mvc.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Optimization.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.Razor.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Deployment.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Razor.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Antlr3.Runtime.pdb
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Newtonsoft.Json.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\EntityFramework.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\EntityFramework.SqlServer.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Google.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\obj\Debug\OnlineQuiz.csprojResolveAssemblyReference.cache
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\obj\Debug\OnlineQuiz.dll
+E:\Training\OnlineQuizModule\OnlineQuiz\OnlineQuiz\obj\Debug\OnlineQuiz.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\csc.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\vbc.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\OnlineQuiz.dll.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\OnlineQuiz.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\OnlineQuiz.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Antlr3.Runtime.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\EntityFramework.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Newtonsoft.Json.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Owin.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Helpers.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Mvc.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Optimization.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Razor.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\WebGrease.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Helpers.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Mvc.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Optimization.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.Razor.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Antlr3.Runtime.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Newtonsoft.Json.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\EntityFramework.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\obj\Debug\OnlineQuiz.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\obj\Debug\OnlineQuiz.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\OnlineQuiz\OnlineQuiz\OnlineQuiz\obj\Debug\OnlineQuiz.pdb

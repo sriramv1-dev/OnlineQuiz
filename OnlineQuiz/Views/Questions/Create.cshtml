@@ -1,0 +1,76 @@
+﻿@model OnlineQuiz.tbl_Questions
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create new Questions</h2>
+<link href="~/Styles/styles.css" rel="stylesheet" />
+@if (Session["LoggedUserName"] != null)
+{
+    <text>welcome @Session["LoggedUserName"].ToString()</text>
+}
+<hr />
+
+@using (Html.BeginForm("Create", "Questions", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+    <div class="col-sm-12 col-md-12 col-xs-12">
+        <div>
+            @Html.LabelFor(a => a.Question)
+        </div>
+        <div>
+            @Html.TextAreaFor(a => a.Question, new {Style="height:90px;width:300px"})
+        </div>
+        <div class="divspace">
+            @Html.LabelFor(a=>a.IsMultipleChoice)
+        </div>
+        <div>
+            @Html.RadioButtonFor(a=>a.IsMultipleChoice,"true", new { @checked = true,@class="radismultiyes" }) YES
+            @Html.RadioButtonFor(a => a.IsMultipleChoice, "false", new { @class= "radismultino" }) NO
+        </div>
+        <div class="divspace answeroptions">
+            
+            <div>
+                @Html.LabelFor(a=>a.Option1):
+                @Html.TextBoxFor(a=>a.Option1)
+            </div>
+            <div>
+                @Html.LabelFor(a => a.Option2):
+                @Html.TextBoxFor(a => a.Option2)
+            </div>
+            <div>
+                @Html.LabelFor(a => a.Option3):
+                @Html.TextBoxFor(a => a.Option3)
+            </div>
+            <div>
+                @Html.LabelFor(a => a.Option4):
+                @Html.TextBoxFor(a => a.Option4)
+            </div>
+            
+        </div>
+        <div class="divspace">
+            @Html.LabelFor(a=>a.CorrectAnswer)
+        </div>
+        <div>
+            @Html.TextBoxFor(a=>a.CorrectAnswer)
+        </div>
+        <br />
+        <div>
+            <input type="submit" name="name" value="Add Question" class="btn btn-primary" id="submitqs"/>
+            @Html.ActionLink("Back To Quiz Info", "AfterLogin", "Home", new { }, new { @class="btn btn-primary"})
+        </div>
+        
+    </div>
+    
+
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/validate")
+}

@@ -1,0 +1,155 @@
+﻿@model OnlineQuiz.tbl_Quiz
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create new Quiz</h2>
+<link href="~/Styles/styles.css" rel="stylesheet" />
+@if (Session["LoggedUserName"] != null)
+{
+    <text>welcome @Session["LoggedUserName"].ToString()</text>
+}
+<hr />
+@using (Html.BeginForm("CreateQuiz", "Quiz", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+        <br />
+    }
+    <div class="col-sm-12 col-md-12 col-xs-12">
+        <div class="col-sm-3 col-md-3 col-xs-3">
+            <div>
+                @Html.LabelFor(a => a.QuizName)
+            </div>
+            @Html.TextBoxFor(a => a.QuizName, new { style = "width:250px" })
+            <div>@Html.LabelFor(a => a.QuizInstructions)</div>
+            @Html.TextAreaFor(a => a.QuizInstructions, new { style = "height:300px;width:250px" })
+
+            <div class="divspace">
+                @Html.ActionLink("Back To Quiz Info", "AfterLogin", "Home", new { }, new { @class = "btn btn-primary" })
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9 col-xs-9 verticalborder">
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="thstyle_underline1">Select</th>
+                        <th class="thstyle_underline2">Question</th>
+                    </tr>
+                </thead>
+                @{int i = 1;}
+                @foreach (var item in ViewBag.Questions)
+                {
+                    if (item.IsMultipleChoice)
+                    {
+
+                        <tr>
+                            <td class="tdstyle1">
+                                <input type="checkbox" questionid="@item.QuestionId" name="Questions" id="chk_isrequired_@item.QuestionId" />
+                            </td>
+                            <td class="tdstyle2">
+                                <div class="quiztdspacing">
+                                    @item.Question
+                                </div>
+                                @if (item.Option1 == item.CorrectAnswer)
+                                {
+                                    @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                    <div class="divcorrectanswer">
+                                        @item.Option1
+                                    </div>
+                                }
+                                else
+                                {
+                                    @*<td style="width:30%"><div>@option</div></td>*@
+                                    <div class="divotheroptions">
+                                        @item.Option1
+                                    </div>
+                                }
+                                @if (item.Option2 == item.CorrectAnswer)
+                                {
+                                    @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                    <div class="divcorrectanswer">
+                                        @item.Option2
+                                    </div>
+                                }
+                                else
+                                {
+                                    @*<td style="width:30%"><div>@option</div></td>*@
+                                    <div class="divotheroptions">
+                                        @item.Option2
+                                    </div>
+                                }
+                                @if (item.Option3 == item.CorrectAnswer)
+                                {
+                                    @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                    <div class="divcorrectanswer">
+                                        @item.Option3
+                                    </div>
+                                }
+                                else
+                                {
+                                    @*<td style="width:30%"><div>@option</div></td>*@
+                                    <div class="divotheroptions">
+                                        @item.Option3
+                                    </div>
+                                }
+                                @if (item.Option4 == item.CorrectAnswer)
+                                {
+                                    @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                    <div class="divcorrectanswer">
+                                        @item.Option4
+                                    </div>
+                                }
+                                else
+                                {
+                                    @*<td style="width:30%"><div>@option</div></td>*@
+                                    <div class="divotheroptions">
+                                        @item.Option4
+                                    </div>
+                                }
+                            </td>
+
+                        </tr>
+                    }
+                    else
+                    {
+
+                        <tr>
+                            <td style="width:10%">
+                                <input type="checkbox" questionid="@item.QuestionId" name="Questions" id="chk_isrequired_@item.QuestionId" />
+                            </td>
+                            <td class="tdstyle2 tdspacing">
+                                <div class="quiztdspacing">
+                                    @item.Question
+                                </div>
+                                <div class="divcorrectanswer">
+                                    @item.CorrectAnswer
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    i++;
+                }
+            </table>
+            @*<div>
+                    @Html.ActionLink("Add Questions", "AfterLogin", "Home")
+                    <a href="#" >Add New Questions</a>
+                </div>*@
+            <div class="divspace">
+                <input type="submit" name="name" class="btn btn-primary" value="Publish Quiz" />
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" name="hid_questions" value="" />
+    </div>
+                    }
+
+@section Scripts{
+    @Scripts.Render("~/bundles/validate")
+}

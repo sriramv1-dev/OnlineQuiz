@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Quiz";
+}
+
+<h2>Quiz</h2>
+@if (Session["LoggedUserName"] != null)
+{
+    <text>welcome @Session["LoggedUserName"].ToString()</text>
+}
+@*@Html.ActionLink("View Quiz", "viewquiz")
+@Html.ActionLink("Create Quiz", "createquiz")*@
+<hr />
+<div class="col-sm-12 col-xs-12 col-md-12">
+    <div class="col-sm-2 col-xs-2 col-md-2">
+        <table>
+            <thead>
+                <tr>
+                    <th>Available Quiz's</th>
+                </tr>
+            </thead>
+            @{ var QuizName = "";}
+            @foreach (var item in ViewBag.QuizData)
+            {
+                QuizName = item.QuizName;
+                <tr>
+                    <td>@Html.ActionLink(QuizName, "Edit", new { quizid = item.QuizId })</td>
+                </tr>
+            }
+        </table>
+
+        <div>
+            <p>@Html.ActionLink("Add new Quiz", "Create", "Quiz")</p>
+        </div>
+    </div>
+
+    <div class="col-sm-10 col-xs-10 col-md-10">
+        
+        <div>
+            <p>@Html.ActionLink("Add new questions", "Create", "Questions")</p>
+        </div>
+    </div>
+</div>

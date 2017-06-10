@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "Quiz";
+}
+<link href="~/Styles/styles.css" rel="stylesheet" />
+<h2>Quiz</h2>
+@if (Session["LoggedUserName"] != null)
+{
+    <text>Welcome @Session["LoggedUserName"].ToString()</text>
+}
+    @*@Html.ActionLink("View Quiz", "viewquiz")
+        @Html.ActionLink("Create Quiz", "createquiz")*@
+    <hr />
+    <div class="col-sm-12 col-xs-12 col-md-12">
+        <div class="col-sm-3 col-xs-3 col-md-3 allquiz">
+            <div class="divheadings text-center">Available Quizzes</div>
+            @{ var QuizName = "";}
+            <ul class="vertical ex">
+                @foreach (var item in ViewBag.QuizData)
+            {
+                QuizName = item.QuizName;
+                    <li>
+                        @Html.ActionLink(QuizName, "Edit", new { quizid = item.QuizId }, new { title = QuizName, @class = "atagoverflow" })
+                    </li>
+                }
+            </ul>
+
+            <div class="text-center divspace">
+                <p>@Html.ActionLink("Add new Quiz", "Create", "Quiz", new { }, new { @class = "btn btn-primary" })</p>
+            </div>
+        </div>
+
+        <div class="col-sm-9 col-xs-9 col-md-9 verticalborder">
+            <div class="divheadings text-center">Available Questions</div>
+
+            <div class="text-center divspace">
+
+                <table style="width:100%">
+
+                    @{int i = 1;}
+                    @foreach (var item in ViewBag.Questions)
+            {
+
+                if (item.IsMultipleChoice)
+                {
+                            
+                            <tr>
+                                <td class="tdstyle2 tdspacing " style="text-align:left">
+                                    <div class="quiztdspacing">
+                                       @i. @item.Question
+                                    </div>
+                                    @if (item.Option1 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option1
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option1
+                                        </div>
+                                    }
+                                    @if (item.Option2 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option2
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option2
+                                        </div>
+                                    }
+                                    @if (item.Option3 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option3
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option3
+                                        </div>
+                                    }
+                                    @if (item.Option4 == item.CorrectAnswer)
+                                    {
+                                        @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                        <div class="divcorrectanswer">
+                                            @item.Option4
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @*<td style="width:30%"><div>@option</div></td>*@
+                                        <div class="divotheroptions">
+                                            @item.Option4
+                                        </div>
+                                    }
+                                </td>
+
+                            </tr>
+                        }
+                        else
+                        {
+
+                            <tr>
+                                <td class="tdstyle2 tdspacing"style="text-align:left">
+                                    <div class="quiztdspacing">
+                                       @i. @item.Question
+                                    </div>
+                                    <div class="divcorrectanswer">
+                                        @item.CorrectAnswer
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        i++;
+                    }
+                </table>
+            </div>
+            <div>
+                <p>@Html.ActionLink("Add new questions", "Create", "Questions", new { }, new { @class = "btn btn-primary" })</p>
+            </div>
+        </div>
+    </div>

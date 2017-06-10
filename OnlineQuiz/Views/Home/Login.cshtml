@@ -1,0 +1,42 @@
+﻿@model OnlineQuiz.tbl_Users
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    if(@ViewBag.Message != null)
+    {
+        <div style="border:1px solid red;width:245px">
+            @ViewBag.Message
+        </div>
+        <br />
+    }
+    <table><tr>
+    <td>
+        @Html.LabelFor(a => a.UserName)
+    </td>
+    <td>@Html.TextBoxFor(a => a.UserName)</td>
+        <td>@Html.ValidationMessageFor(a=>a.UserName,"", new { @class="validationerr"})</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(a=> a.Password)</td>
+        <td>@Html.PasswordFor(a=>a.Password)</td>
+        <td>@Html.ValidationMessageFor(a=>a.Password)</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="padding-top:10px">
+            <input class="btn btn-success" type="submit" name="name" value="Login" />
+        </td>
+        <td></td>
+    </tr>
+    </table>
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    }

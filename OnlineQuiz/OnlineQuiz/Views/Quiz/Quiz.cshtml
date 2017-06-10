@@ -1,0 +1,88 @@
+﻿@model OnlineQuiz.Models.QuizQuestions
+
+@{
+    ViewBag.Title = "Quiz";
+}
+
+<h2>Quiz</h2>
+<div class="col-xs-12 col-sm-12 col-md-12">
+    <div>
+        @Html.Label("Select Quiz type")
+
+        @Html.DropDownListFor(model => model.QuizList, Model.QuizList, "Select Quiz", new { @class = "form-control LoadQuestion", @onchange = "LoadQuestion()" })
+    </div>
+</div>
+<hr />
+<div class="col-xs-12 col-sm-12 col-md-12">
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th style="width:10%">Sl no.</th>
+                <th style="width:70%">Question</th>
+            </tr>
+        </thead>
+        @{int i = 1;}
+        @foreach (var item in ViewBag.AllQuestions)
+            {
+
+                string[] options;
+                if (item.IsMultipleChoise)
+                {
+                    options = item.AnswerOptions.Split(',');
+
+                <tr>
+                    <td style="width:10%">@i</td>
+                    <td style="width:80%">
+                        @item.Question
+                        <div class="col-sm-12 col-md-12">
+                            @foreach (string option in options)
+                            {
+                                if (option == item.CorrectAnswer)
+                                {
+                                    @*<td style="width:30%"><div style="font-weight:bold">@option</div></td>*@
+                                    @*<li><span>&#10003; @option</span></li>*@
+                                    <div class="col-sm-2 col-md-2">
+                                        <input type="radio" name="option_@item.QuestionId" class="radclass" iscorrect="true" value="@option"> @option<br>
+                                    </div>
+                                }
+                                else
+                                {
+                                    @*<td style="width:30%"><div>@option</div></td>*@
+                                    <div class="col-sm-2 col-md-2">
+                                        <input type="radio" name="option_@item.QuestionId" class="radclass" iscorrect="false" value="@option"> @option<br>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </td>
+
+                </tr>
+            }
+            else
+            {
+
+                <tr>
+                    <td style="width:10%">@i</td>
+                    <td style="width:80%">
+                        <div>
+                            @item.Question :
+                        </div>
+                        <input type="text" name="answer" correctanswer="@item.CorrectAnswer" />
+                    </td>
+                </tr>
+            }
+            i++;
+        }
+    </table>
+
+    <div>
+        <input type="button" class="btn btn-primary" value="Submit Result" id="quiz_submit"/>
+    </div>
+    <div>
+        <label id="lbl_result"></label>
+    </div>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/validate")
+}

@@ -1,0 +1,60 @@
+﻿@model OnlineQuiz.tbl_Questions
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Questions", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    if (@ViewBag.Message != null)
+    {
+        <div style="border:1px solid">
+            @ViewBag.Message
+        </div>
+    }
+    <div class="col-sm-12 col-md-12 col-xs-12">
+        <div>
+            @Html.LabelFor(a => a.Question)
+        </div>
+        <div>
+            @Html.TextAreaFor(a => a.Question, new {Style="height:90px;width:300px"})
+        </div>
+        <div>
+            @Html.LabelFor(a=>a.IsMultipleChoise)
+        </div>
+        <div>
+            @Html.RadioButtonFor(a=>a.IsMultipleChoise,"false", new { @checked = true }) YES
+            @Html.RadioButtonFor(a => a.IsMultipleChoise, "true") NO
+        </div>
+        <div>
+            
+            <div>
+                @Html.LabelFor(a=>a.AnswerOptions)
+            </div>
+            <div>
+                @Html.TextBoxFor(a=>a.AnswerOptions)
+            </div>
+            
+        </div>
+        <div>
+            @Html.LabelFor(a=>a.CorrectAnswer)
+        </div>
+        <div>
+            @Html.TextBoxFor(a=>a.CorrectAnswer)
+        </div>
+        <br />
+        <div>
+            <input type="submit" name="name" value="Add Question" />
+            @Html.ActionLink("Back To Quiz Info", "AfterLogin", "Home")
+        </div>
+        
+    </div>
+    
+
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
